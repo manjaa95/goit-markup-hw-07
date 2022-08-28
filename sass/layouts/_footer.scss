@@ -81,7 +81,7 @@ margin-left: 70px;
     max-width: 570px;
     height: 86px;
 }
-.input {
+.email__input {
     display: flex;
 }
 .follow-block__title {
@@ -93,7 +93,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 20px;
 }
-.input__modal {
+.email__modal {
     width: 358px;
     height: 50px;
 border: 1px solid rgba(255, 255, 255, 0.3);
@@ -112,6 +112,6 @@ background-color: transparent;
 transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input__modal:focus {
+.email__modal:focus {
     border-color: var(--brand-color);
 }
