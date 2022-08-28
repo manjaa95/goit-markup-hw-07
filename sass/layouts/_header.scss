@@ -26,6 +26,10 @@ color: #212121;
 padding: 32px 4px 33px 4px;
 transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--brand-color);
+}
 }
 .contacts__link {
     display: flex;
@@ -37,6 +41,10 @@ letter-spacing: 0.02em;
 color: var(--text-color);
 transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+&:focus {
+    color: var(--brand-color)
+}
 }
 .contacts__icon {         
     margin-right: 10px;
@@ -44,32 +52,24 @@ transition: 250ms;
     align-self: center;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.navigator__link:hover,
-.navigator__link:focus {
-    color: var(--brand-color);
-}
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--brand-color)
-}
-.contacts__link:hover .contacts__icon,
-.contacts__link:focus .contacts__icon {
+    .contacts__link:hover &,
+.contacts__link:focus & {
 fill: var(--brand-color);
+}
 }
 .active {
     color: var(--brand-color)
 }
 .current {
     position: relative;
-}
-.current::after {
-    content: '';
-    position: absolute;
-    height: 4px;
-    border-radius: 2px;
-    width: 100%;
-    background-color: var(--brand-color);
-    bottom: 0;
-    left: 0;
+    &::after {
+        content: '';
+        position: absolute;
+        height: 4px;
+        border-radius: 2px;
+        width: 100%;
+        background-color: var(--brand-color);
+        bottom: 0;
+        left: 0;
+    }
 }

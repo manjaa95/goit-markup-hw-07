@@ -27,10 +27,10 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact__link:hover,
-.contact__link:focus {
+    &:hover,
+    &:focus {
     color: var(--brand-color);
+}
 }
 /* footer soc menu */
 .footer-container {
@@ -63,17 +63,17 @@ margin-left: 70px;
     justify-content: center;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+&:focus {
+    background-color: var(--brand-color);
+}
 }
 .socials__icon {
     fill: #FFFFFF;
-}
-.socials__link:hover,
-.socials__link:focus {
-    background-color: var(--brand-color);
-}
-.socials__link:hover .socials__icon,
-.socials__link:focus .socials__icon {
+    .socials__link:hover &,
+    .socials__link:focus & {
     fill: #FFFFFF;
+}
 }
 /* footer input */
 .follow-block {
@@ -111,7 +111,7 @@ outline: transparent;
 background-color: transparent;
 transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.email__modal:focus {
-    border-color: var(--brand-color);
+    &:focus {
+        border-color: var(--brand-color);
+    }
 }
